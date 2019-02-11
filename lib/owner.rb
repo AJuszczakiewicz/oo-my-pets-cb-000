@@ -31,5 +31,6 @@ class Owner
 
   def pets(species="human")
     owner = Owner.new(species)
+    owner.pets = {:fishes => [], :dogs => [], :cats => []}
   end
 end
