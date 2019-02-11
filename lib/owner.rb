@@ -1,11 +1,12 @@
 class Owner
   # code goes here
-  attr_reader :species
-  attr_accessor :name, :pets
+  attr_reader :species, :pets
+  attr_accessor :name
   @@all = Array.new
 
   def initialize(species)
     @species = species
+    @pets = {:fishes => [], :dogs => [], :cats => []}
     self.save
   end
 
@@ -29,10 +30,6 @@ class Owner
     "I am a #{self.species}."
   end
 
-  def pets(species="human")
-    owner = Owner.new(species)
-    owner.pets = {:fishes => [], :dogs => [], :cats => []}
-  end
 
   def buy_fish(fish_name)
     @pets[:fishes].push(Fish.new(fish_name))
