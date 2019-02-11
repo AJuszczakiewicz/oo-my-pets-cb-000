@@ -1,7 +1,7 @@
 class Owner
   # code goes here
   attr_reader :species
-  attr_accessor :name
+  attr_accessor :name :pets
   @@all = Array.new
 
   def initialize(species)
@@ -27,5 +27,9 @@ class Owner
 
   def say_species
     "I am a #{self.species}."
+  end
+
+  def pets
+    
   end
 end
