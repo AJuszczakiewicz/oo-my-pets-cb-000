@@ -12,7 +12,7 @@ end
 class Cat < Pet
   # code goes here
   def initialize(name)
-    super()
+    super(name)
   end
 
 end
