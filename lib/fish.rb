@@ -11,6 +11,6 @@ end
 
 class Fish < Pet
   def initialize
-    super
+    super()
   end
 end
