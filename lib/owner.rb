@@ -20,5 +20,7 @@ class Owner
     @@all.clear
   end
 
-
+  def count
+    @@all.size
+  end
 end
