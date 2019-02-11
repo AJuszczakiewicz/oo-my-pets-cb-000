@@ -12,6 +12,6 @@ end
 class Dog < Pet
   # code goes here
   def initialize
-    super
+    super()
   end
 end
