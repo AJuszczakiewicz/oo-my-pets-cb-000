@@ -1,3 +1,4 @@
+require_relative './pet'
 class Pet
   attr_reader :name
   attr_accessor :mood
