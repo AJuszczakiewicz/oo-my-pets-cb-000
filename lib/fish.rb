@@ -14,5 +14,3 @@ class Fish < Pet
     super
   end
 end
-
-
