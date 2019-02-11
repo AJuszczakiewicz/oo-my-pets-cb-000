@@ -1,9 +1,11 @@
 class Owner
   # code goes here
 
-  @@all
+  @@all = Array.new
 
-  def initialize
+  def initialize(species)
+    @species = species
+
   end
 
   def self.all
