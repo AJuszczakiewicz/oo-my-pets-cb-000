@@ -11,7 +11,7 @@ end
 
 class Cat < Pet
   # code goes here
-  def initialize
+  def initialize(name)
     super()
   end
 
