@@ -59,4 +59,8 @@ class Owner
     @pets.values.flatten.each{|pet| pet.mood = "nervous"}
     @pets = {:fishes => [], :dogs => [], :cats => []}
   end
+
+  def list_pets
+    "I have #{@pet[:fishes].size} fish, #{@pet[:dogs].size} dog(s), and #{@pet[:cats].size}cat(s)."
+  end
 end
