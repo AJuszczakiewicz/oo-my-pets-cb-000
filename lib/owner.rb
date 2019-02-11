@@ -5,7 +5,11 @@ class Owner
 
   def initialize(species)
     @species = species
+    self.save
+  end
 
+  def save
+    @@all << self
   end
 
   def self.all
