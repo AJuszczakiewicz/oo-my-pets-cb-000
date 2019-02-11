@@ -29,7 +29,7 @@ class Owner
     "I am a #{self.species}."
   end
 
-  def pets
-
+  def pets(species="human")
+    owner = Owner.new(species)
   end
 end
